@@ -1,0 +1,2 @@
+angular.module('honeyBookApp', ['ngRoute']);
+

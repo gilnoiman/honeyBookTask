@@ -1,0 +1,93 @@
+body {
+  background-color: #eceeff !important;
+}
+
+#card-container .single-contact-card {
+  padding: 0;
+}
+
+#card-container .single-contact-card span {
+  display: block;
+}
+
+#card-container .all-cards-wrap {
+  margin-top: 4%;
+}
+
+#card-container .all-cards-wrap .single-contact-card .card-wrap {
+  height: 200px;
+  margin: 2px auto 2px auto;
+  background-color: white;
+  overflow: hidden;
+  border: 1px solid #e2e2e2;
+  padding: 7px;
+}
+
+#card-container .all-cards-wrap .single-contact-card .card-wrap .icon-image {
+  width: 37px;
+  height: 37px;
+  background: transparent;
+  border-radius: 17px;
+  margin-top: -41px;
+  margin-left: 4px;
+}
+
+#card-container .all-cards-wrap .single-contact-card .card-wrap .profile-image {
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  width: 110px;
+  position: relative;
+}
+
+#card-container .all-cards-wrap .card-wrap .text-under-img {
+  width: 111px;
+  margin: 22px auto 0 auto;
+  font-size: 6pt;
+  text-align: left;
+  position: relative;
+}
+
+#card-container .all-cards-wrap .card-wrap .text-under-img .full-name {
+  font-weight: bold;
+  font-size: 8pt;
+}
+
+#card-container .all-cards-wrap .card-wrap .text-under-img .hidden-text {
+  display: none;
+  margin-top: 8px;
+}
+
+#card-container .all-cards-wrap .card-wrap-hover .text-under-img {
+  background-color: #ffffff;
+  margin-top: -46px;
+  height: 87px;
+  padding-top: 21px;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+#card-container .top-cards-line {
+  background-color: white;
+}
+
+#card-container .top-cards-line h2 {
+  display: inline;
+  float: left;
+}
+
+#card-container .top-cards-line .search-input {
+  width: 260px;
+  float: right;
+  margin: 2%;
+}
+
+@media screen and (max-width: 767px) {
+  #card-container .top-cards-line h2 {
+    float: none;
+  }
+  #card-container .top-cards-line .search-input {
+    float: none;
+    margin: 2% auto 2% auto;
+  }
+}

@@ -1,0 +1,42 @@
+
+<div  ng-controller="contactList" class="container-fluid container-cards-pf" id="card-container">
+	<div class="row top-cards-line">
+		<div class="col-lg-8 col-md-12 text-center col-lg-offset-2">
+			<h2 class="">Contact List:</h2>
+			<div class="form-group has-feedback search-input">
+			    <input type="text" class="form-control" ng-model="query"/>
+			    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+			</div>			
+		
+		</div>
+	</div>
+
+	<div class="row all-cards-wrap">
+		<div class="col-lg-8 col-md-12">
+		   <div class="row row-cards-pf col-lg-6 col-lg-offset-6 center">
+
+
+		      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 single-contact-card" ng-repeat="contact in contactListCollection | filter:query" hovering-Card >
+		            <div class="card-wrap">
+	               		<img class="img-responsive profile-image" ng-src="{{contact.profile_image}}">
+	               
+		               <div class="text-under-img">
+			               <img class="img-responsive icon-image" ng-src="{{contact.icon}}">
+			               		               
+			               <div class="card-pf-title">
+			                  <span class="full-name">{{contact.name}}</span>
+			                  <span>Job Title | {{contact.company_name}}</span>
+			               </div>
+			               <div class="card-pf-items hidden-text">
+								<span>Phone Number {{contact.phone}}</span>
+								<span>{{contact.email}}</span>
+			               </div>
+		               </div>
+		            </div>
+		      </div>
+
+		   </div>
+		</div>
+   </div>
+</div>
+
